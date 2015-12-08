@@ -7,10 +7,6 @@
 <link href="<?php echo (CSS_URL); ?>/admin_top/css/top.css" rel="stylesheet" />
 </head>
 <body>
-	<div id="info"></div>
-	<div id="logo"></div>
-	
-	
 	<div id="tips">
 		<a href="<?php echo u("Admin/do_loginout");?>" target="_parent">注销</a>
 	</div>

@@ -19,13 +19,10 @@ define('APP_DEBUG',True);
 
 //定义网站根路径
 define('SITE_URL','http://localhost/jkb_shopping/');
-
 //定义网站css文件路径
 define('CSS_URL',SITE_URL.'Public/public1/admin/css');
-
 //定义网站js文件路径
 define('JS_URL',SITE_URL.'Public/public1/admin/js');
-
 //定义网站img文件路径
 define('IMG_URL',SITE_URL.'Public/public1/admin/img');
 

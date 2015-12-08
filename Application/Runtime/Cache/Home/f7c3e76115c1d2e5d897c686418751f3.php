@@ -11,14 +11,16 @@
 	<meta content="telephone=no" name="format-detection">
 	<!-- <link href="<?php echo (CSS_URL); ?>/common.css" rel="stylesheet">
 	<link href="<?php echo (CSS_URL); ?>/detail.css" rel="stylesheet"> -->
-	<link href="public/public1/index/css/common.css" rel="stylesheet">
-	<link href="public/public1/index/css/detail.css" rel="stylesheet">
+	<link href="../../../../../Public/public1/index/css/common.css" rel="stylesheet">
+ 	<link href="../../../../../public/public1/index/css/detail.css" rel="stylesheet">
 </head>
 
 <body>
 <div class="g-body">
     <div class="m-detail">
 	<div class="m-simpleHeader" id="dvHeader">
+	<a href="#"  onClick="javascript :history.back(-1);" data-pro="back" data-back="true" class="m-simpleHeader-back"><i class="ico-back"></i></a>
+	    
 	    <h1>商品详情</h1>
 	</div>
         <div class="g-wrap">
@@ -36,15 +38,20 @@
                     <div class="w-goods-info">
                         <p class="w-goods-title"><?php echo ($goods["name"]); ?></p>
                         <p class="w-goods-period">期号：<?php echo ($goods["issue"]); ?></p>
-                            <div class="w-progressBar">
-                                <p class="wrap">
-                                    <span class="bar" style="width:<?php echo ($percent); ?>;"><i class="color"></i></span>
-                                </p>
-                                <ul class="txt">
-                                    <li class="txt-l"><p>总需<?php echo ($goods["number"]); ?>人次</p></li>
-                                    <li class="txt-l"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo ($goods["unit_price"]); ?>元/人次</p></li>
-                                    <li class="txt-r"><p>剩余<b class="txt-blue"><?php echo ($remainder); ?></b></p></li>
-                                </ul>
+                            <div class="m-detail-goods-result">
+                                <div class="w-record">
+                                    <i class="ico ico-label ico-label-winner"></i>
+                                    <div class="w-record-avatar">
+                                        <img  src="<?php echo ($goods["head"]); ?>" height="90" width="90">
+                                    </div>
+                                    <div class="w-record-detail">
+                                        <p class="f-breakword">获奖者：<?php echo ($goods["user"]); ?></p>
+                                        <p>用户ID：<?php echo ($goods["user_id"]); ?> (唯一不变标识)</p>
+                                        <p>本期参与：n人次</p>
+                                        <p>揭晓时间：<?php echo ($goods["publish_time"]); ?></p>
+                                    </div>
+                                </div>
+                                <p class="m-detail-goods-result-luckyCode">幸运号码：<b><?php echo ($goods["lucky_number"]); ?></b></p>
                             </div>
                     </div>
                 </div>
@@ -70,7 +77,7 @@
 	                    <!-- foreach 循环li -->
 		                    
 			                    <div class="m-detail-record-time">
-			                    <?php echo ($now_time); ?></div>
+			                    <?php echo ($goods["end_time"]); ?></div>
 			                    <?php if(is_array($pay_list)): foreach($pay_list as $key=>$pay): ?><li id="pro-view-5">
 			                    <div class="f-clear">
 				                    <div class="avatar">
@@ -94,13 +101,17 @@
                 </div>
             </div>
         </div>
-                    <div class="m-simpleFooter m-detail-buy">
-                        <div data-pro="text" class="m-simpleFooter-text" style="text-align:center">
-                            <a id="quickBuy" class="w-button w-button-main" href="<?php echo u('Pay/join');?>">立即参与</a>
-                        </div>
-                        <div data-pro="ext" class="m-simpleFooter-ext"></div>
-                    </div>
-    </div>
+	<div class="m-simpleFooter m-detail-buy">
+
+		<div data-pro="text" class="m-simpleFooter-text">
+			<span class="m-detail-go-period">最新一期</span>正在火热进行...
+		</div>
+		<div data-pro="ext" class="m-simpleFooter-ext">
+			<a class="w-button w-button-main m-detail-go-link" href="http://localhost/jkb_shopping/index.php">立即前往</a>
+		</div>
+		<div data-pro="ext" class="m-simpleFooter-ext"></div>
+	</div>
+</div>
 </div>
 <button id="pro-view-3" class="w-button w-button-round w-button-backToTop" style="bottom: 55px; display: none;">返回顶部</button>
 </body>

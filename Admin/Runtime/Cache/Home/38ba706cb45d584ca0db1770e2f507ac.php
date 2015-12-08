@@ -26,6 +26,8 @@
 <div class="blank5"></div>
 <div class="button_row">
 	<a href="<?php echo u('Goods/add');?>" target="_self"><input type="button" class="button" value=" 新增商品 " /></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="<?php echo u('User/user_list');?>" target="_self"><input type="button" class="button" value=" 会员列表 " /></a>
 </div>
 <div class="blank5"></div>
 <div class="search_row">
@@ -47,7 +49,7 @@
 			<th width="150px   ">开始时间</th>
 			<th width="150px   ">结束时间</th>
 			<th width="150px   ">幸运号 </th>
-			<th width="150px   ">中奖人</th>
+			<th width="150px   ">中奖人（id-昵称）</th>
 			<th width="300px">操作</th>
 		</tr>
 		<?php if(is_array($goods_list)): foreach($goods_list as $key=>$goods): ?><tr class="row">
@@ -62,8 +64,17 @@
 			<td>&nbsp;<span class="sort_span" ><?php echo ($goods["begin_time"]); ?></span></td>
 			<td>&nbsp;<span class="is_effect" ><?php echo ($goods["end_time"]); ?></span></td>
 			<td>&nbsp;<span class="is_effect" ><?php echo ($goods["lucky_number"]); ?></span></td>
-			<td>&nbsp;<span class="is_effect" ><?php echo ($goods["man"]); ?></span></td>
-			<td> <a href="javascript:edit_index('404')">编辑</a>&nbsp;&nbsp;<a href="javascript:%20del('404')">删除</a>&nbsp;&nbsp; <a href="javascript:deal_item('404')">输入幸运号</a>&nbsp; &nbsp; <a href="javascript:get_pay_list('404')">购买列表</a>&nbsp;</td>
+			<td>&nbsp;<span class="is_effect" >
+			<?php echo ($goods["user_id"]); ?>-<?php echo ($goods["user"]); ?>
+			
+			</span></td>
+			<td> 
+				 【<?php echo ($goods["id"]); ?>】
+				 <a href="<?php echo u('Goods/edit',array('id' => $goods['id']));?>">编辑</a>&nbsp;&nbsp;
+				 <a href="<?php echo u('Goods/delete',array('id' => $goods['id']));?>">删除</a>&nbsp;&nbsp; 
+				 <a href="<?php echo u('Goods/input_lucky',array('id' => $goods['id']));?>">输入幸运号</a>&nbsp; &nbsp; 
+				 <a href="<?php echo u('Goods/pay_list',array('id' => $goods['id']));?>">购买列表</a>&nbsp;
+		    </td>
 		</tr><?php endforeach; endif; ?>
 	</tbody>
 </table>

@@ -26,6 +26,8 @@
 <div class="blank5"></div>
 <div class="button_row">
 	<a href="{:u('Goods/add')}" target="_self"><input type="button" class="button" value=" 新增商品 " /></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="{:u('User/user_list')}" target="_self"><input type="button" class="button" value=" 会员列表 " /></a>
 </div>
 <div class="blank5"></div>
 <div class="search_row">
@@ -47,7 +49,7 @@
 			<th width="150px   ">开始时间</th>
 			<th width="150px   ">结束时间</th>
 			<th width="150px   ">幸运号 </th>
-			<th width="150px   ">中奖人</th>
+			<th width="150px   ">中奖人（id-昵称）</th>
 			<th width="300px">操作</th>
 		</tr>
 		<foreach name="goods_list" item="goods">
@@ -64,8 +66,17 @@
 			<td>&nbsp;<span class="sort_span" >{$goods.begin_time}</span></td>
 			<td>&nbsp;<span class="is_effect" >{$goods.end_time}</span></td>
 			<td>&nbsp;<span class="is_effect" >{$goods.lucky_number}</span></td>
-			<td>&nbsp;<span class="is_effect" >{$goods.man}</span></td>
-			<td> <a href="javascript:edit_index('404')">编辑</a>&nbsp;&nbsp;<a href="javascript:%20del('404')">删除</a>&nbsp;&nbsp; <a href="javascript:deal_item('404')">输入幸运号</a>&nbsp; &nbsp; <a href="javascript:get_pay_list('404')">购买列表</a>&nbsp;</td>
+			<td>&nbsp;<span class="is_effect" >
+			{$goods.user_id}-{$goods.user}
+			
+			</span></td>
+			<td> 
+				 【{$goods.id}】
+				 <a href="{:u('Goods/edit',array('id' => $goods['id']))}">编辑</a>&nbsp;&nbsp;
+				 <a href="{:u('Goods/delete',array('id' => $goods['id']))}">删除</a>&nbsp;&nbsp; 
+				 <a href="{:u('Goods/input_lucky',array('id' => $goods['id']))}">输入幸运号</a>&nbsp; &nbsp; 
+				 <a href="{:u('Goods/pay_list',array('id' => $goods['id']))}">购买列表</a>&nbsp;
+		    </td>
 		</tr>
 		</foreach>
 	</tbody>

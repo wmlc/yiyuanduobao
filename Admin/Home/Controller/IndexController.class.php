@@ -55,6 +55,11 @@ class IndexController extends Controller {
             if($goods_list["$key"]['begin_time']!=0){
                 $goods_list["$key"]['begin_time']= date("Y-m-d H:i:s", $goods_list["$key"]['begin_time']);
             }
+            $user_id=$goods_list["$key"]['user_id'];
+            if($user_id){
+                $goods_list["$key"]['user'] = M("user")->where("id='$user_id'")->getField('name');
+            }
+            
         }
         
         $this->assign("goods_list",$goods_list);

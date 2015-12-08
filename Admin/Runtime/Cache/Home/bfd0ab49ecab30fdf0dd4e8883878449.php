@@ -10,7 +10,7 @@
 <form action="<?php echo u("Admin/do_login");?>" method="post">
 <table border="0" cellpadding="0" cellspacing="0" class="login_bar">
   <tr>
-  	<td width="330" align="right"><img src="<?php echo (IMG_URL); ?>/login/logo.png" border="0" /></td>
+  	<td width="330" align="right"></td>
 	<td width="63"><img src="<?php echo (IMG_URL); ?>/line.png" border="0" /></td>
 	<td>
 		<table border="0" cellpadding="0" cellspacing="0" class="login_f">

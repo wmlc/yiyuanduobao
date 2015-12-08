@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -24,24 +24,22 @@
 		    <div class="m-winRecord-wrap">
 		    <div id="pro-view-1">
 		    	<ul class="m-winRecord-list hahah" data-pro="entry">
-		    	<foreach name="goods_past" item="goods" key="k">
-		    		<li id="pro-view-2" class="w-record m-winRecord-revealed">
+		    	<?php if(is_array($goods_past)): foreach($goods_past as $k=>$goods): ?><li id="pro-view-2" class="w-record m-winRecord-revealed">
 		    			<div class="w-record-title">
-		    				<a href="{:u('Goods/past_details',array('issue' => $goods['issue']))}">期号：{$goods.issue} ( 揭晓时间：{$goods.publish_time} )</a>
+		    				<a href="<?php echo u('Goods/past_details',array('issue' => $goods['issue']));?>">期号：<?php echo ($goods["issue"]); ?> ( 揭晓时间：<?php echo ($goods["publish_time"]); ?> )</a>
 		    			</div>
 		    			<div class="w-record-cnt f-clear">
 		    				<div class="w-record-avatar">
-		    					<img  src="{$goods.head}" height="90" width="90">
+		    					<img  src="<?php echo ($goods["head"]); ?>" height="90" width="90">
 		    				</div>
 		    				<div class="w-record-detail">
-		    					<p class="f-txtabb">获奖者：{$goods.user}</p>
-		    					<p>用户ID：{$goods.user_id} (唯一不变标识)</p>
-		    					<p>幸运号码：<span class="txt-red">{$goods.lucky_number}</span></p>
-		    					<p>本期参与：<span class="txt-red">{$goods.man_number}</span>人次</p>
+		    					<p class="f-txtabb">获奖者：<?php echo ($goods["user"]); ?></p>
+		    					<p>用户ID：<?php echo ($goods["user_id"]); ?> (唯一不变标识)</p>
+		    					<p>幸运号码：<span class="txt-red"><?php echo ($goods["lucky_number"]); ?></span></p>
+		    					<p>本期参与：<span class="txt-red"><?php echo ($goods["man_number"]); ?></span>人次</p>
 		    				</div>
 		    			</div>
-		    		</li>
-		    		</foreach>
+		    		</li><?php endforeach; endif; ?>
 		    	</ul>
 		    </div>
 	    </div>

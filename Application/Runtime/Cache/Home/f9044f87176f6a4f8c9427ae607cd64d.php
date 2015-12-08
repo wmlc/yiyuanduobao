@@ -3,7 +3,7 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>个人中心 </title>
+    <title>本期幸运码 </title>
 	<meta name="description" content="1元夺宝">
     <meta name="keywords" content="1元夺宝">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
@@ -17,7 +17,7 @@
 	<div class="m-simpleHeader" id="dvHeader">
 		<a href="#" onClick="javascript :history.back(-1);" data-pro="back" data-back="true" class="m-simpleHeader-back"><i class="ico ico-back"></i></a>
 		<a href="#" data-pro="ok" class="m-simpleHeader-ok" id="aHome"><i class="ico ico-home"></i></a>
-		<h1>个人中心</h1>
+		<h1>本期幸运码</h1>
 	</div>
     <div class="m-user-index">
     	<div class="m-user-summary m-user-summary-simple">
