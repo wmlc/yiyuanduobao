@@ -1,0 +1,58 @@
+[ 2015-12-10T12:31:01+08:00 ] ::1 /jkb_shopping/index.php/Home/Admin/login
+ERR: 无法加载控制器:Admin
+
+[ 2015-12-10T12:36:45+08:00 ] ::1 /jkb_shopping/index.php/Home/Pay/join.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_goods` WHERE ( id= ) LIMIT 1  
+
+[ 2015-12-10T12:37:17+08:00 ] ::1 /jkb_shopping/index.php/Home/Pay/join.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `think_goods` WHERE ( id= ) LIMIT 1  
+
+[ 2015-12-10T12:37:28+08:00 ] ::1 /jkb_shopping/index.php/Home/public/public1/index/css/pay_join/common.css
+ERR: 无法加载控制器:Public
+
+[ 2015-12-10T12:37:28+08:00 ] ::1 /jkb_shopping/index.php/Home/public/public1/index/css/pay_join/cart.css
+ERR: 无法加载控制器:Public
+
+[ 2015-12-10T12:37:41+08:00 ] ::1 /jkb_shopping/index.php/Home/public/public1/index/css/pay_join/common.css
+ERR: 无法加载控制器:Public
+
+[ 2015-12-10T12:37:41+08:00 ] ::1 /jkb_shopping/index.php/Home/public/public1/index/css/pay_join/cart.css
+ERR: 无法加载控制器:Public
+
+[ 2015-12-10T12:38:24+08:00 ] ::1 /jkb_shopping/index.php/Home/public/public1/index/css/pay_join/common.css
+ERR: 无法加载控制器:Public
+
+[ 2015-12-10T12:38:24+08:00 ] ::1 /jkb_shopping/index.php/Home/public/public1/index/css/pay_join/cart.css
+ERR: 无法加载控制器:Public
+
+[ 2015-12-10T15:21:12+08:00 ] ::1 /jkb_shopping/index.php/Home/public/public1/index/css/pay_pay/pay.css
+ERR: 无法加载控制器:Public
+
+[ 2015-12-10T15:21:12+08:00 ] ::1 /jkb_shopping/index.php/Home/public/public1/index/css/pay_pay/common.css
+ERR: 无法加载控制器:Public
+
+[ 2015-12-10T15:21:39+08:00 ] ::1 /jkb_shopping/index.php/Home/public/public1/index/css/pay_pay/common.css
+ERR: 无法加载控制器:Public
+
+[ 2015-12-10T15:21:39+08:00 ] ::1 /jkb_shopping/index.php/Home/public/public1/index/css/pay_pay/pay.css
+ERR: 无法加载控制器:Public
+
+[ 2015-12-10T15:31:00+08:00 ] ::1 /jkb_shopping/index.php/Home/Goods/insert.html
+ERR: 非法操作:insert
+
+[ 2015-12-10T15:31:28+08:00 ] ::1 /jkb_shopping/index.php/Home/Goods/insert.html
+ERR: 非法操作:insert
+
+[ 2015-12-10T15:31:36+08:00 ] ::1 /jkb_shopping/index.php/Home/Goods/insert.html
+ERR: 非法操作:insert
+
+[ 2015-12-10T20:39:25+08:00 ] ::1 /jkb_shopping/index.php/Home/User/lucky/id/9/user_id/ba9c3029e08e0366a2f6b4e530c9b587_90.jpeg
+ERR: 1054:Unknown column 'ba9c3029e08e0366a2f6b4e530c9b587_90.jpeg' in 'where clause'
+ [ SQL语句 ] : SELECT `lucky_number` FROM `think_order` WHERE ( goods_id=9 AND user_id=ba9c3029e08e0366a2f6b4e530c9b587_90.jpeg ) LIMIT 1  
+
+[ 2015-12-10T20:40:09+08:00 ] ::1 /jkb_shopping/index.php/Home/User/lucky/id/9/user_id/ba9c3029e08e0366a2f6b4e530c9b587_90.jpeg
+ERR: 1054:Unknown column 'ba9c3029e08e0366a2f6b4e530c9b587_90.jpeg' in 'where clause'
+ [ SQL语句 ] : SELECT `lucky_number` FROM `think_order` WHERE ( goods_id=9 AND user_id=ba9c3029e08e0366a2f6b4e530c9b587_90.jpeg ) LIMIT 1  
+

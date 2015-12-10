@@ -11,23 +11,19 @@
 	<link href="../../../public/public1/index/css/pay_pay/common.css" rel="stylesheet">
 	<link href="../../../public/public1/index/css/pay_pay/pay.css" rel="stylesheet">
 </head>
-
-
-
-
 <body>
     <div class="m-pay-order">
         <div data-pro="list">
         	<div id="pro-view-1">
         		<div data-pro="entry" class="m-pay-order-list">
         			<div id="pro-view-2" class="m-pay-order-list-item">
-        				<span class="m-pay-order-list-item-name">Apple Watch Sport 38毫米 铝金属表壳 运动表带</span>
+        				<span class="m-pay-order-list-item-name">{$goods.name}</span>
         				<span class="m-pay-order-list-item-num">
-        					<b class="txt-red">2</b>人次
+        					<b class="txt-red">{$goods.buy_number}</b>人次
         				</span>
         			</div>
         		</div>
-        		<div class="m-pay-order-total">商品合计：<b class="txt-red">2元</b></div>
+        		<div class="m-pay-order-total">商品合计：<b class="txt-red">{$goods.total_money}元</b></div>
         	</div>
         </div>
         
@@ -54,4 +50,4 @@
 
 
 
-<div id="pro-view-0" class="m-simpleHeader"><a href="javascript:void(0);" data-pro="back" data-back="true" class="m-simpleHeader-back"><i class="ico ico-back"></i></a><h1>支付订单</h1></div></body></html>
+<div id="pro-view-0" class="m-simpleHeader"><a href="#"  onClick="javascript :history.back(-1);"  data-pro="back" data-back="true" class="m-simpleHeader-back"><i class="ico ico-back"></i></a><h1>支付订单</h1></div></body></html>

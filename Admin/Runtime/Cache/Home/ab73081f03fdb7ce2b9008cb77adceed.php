@@ -80,7 +80,8 @@
 	<tr>
 		<td class="item_title">商品详情:</td>
 		<td class="item_input">
-			 <textarea name="description" style="width:800px;height:400px;visibility:hidden;">此处填写商品图文详情！</textarea>
+			<textarea name="description" style="width:800px;height:400px;visibility:hidden;">此处填写商品图文详情！</textarea>
+			<b class='tip_span'>图片像素要求： 800 * ?</b>
 		</td>
 	</tr>
 </table>

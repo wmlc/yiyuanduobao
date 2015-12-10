@@ -19,7 +19,7 @@
 	    <a data-pro="back" onClick="javascript :history.back(-1);" data-back="true" class="m-simpleHeader-back"><i class="ico-back"></i></a>
 	    <h1>商品详情</h1>
 	</div>
-        <div class="g-wrap m-intro-picWrap"><?php echo ($goods); ?></div>
+        <div class="g-wrap m-intro-picWrap" id="l_main"><?php echo ($goods); ?></div>
     </div>
 </div>
 <button class="w-button w-button-round w-button-backToTop" style="display: none;" id="pro-view-0">返回顶部</button>
