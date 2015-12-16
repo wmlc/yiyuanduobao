@@ -10,7 +10,6 @@
 // +----------------------------------------------------------------------
 
 // 应用入口文件
-
 // 检测PHP环境
 if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
 
@@ -18,7 +17,7 @@ if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
 define('APP_DEBUG',True);
 
 //定义网站根路径
-define('SITE_URL','http://localhost/jkb_shopping/');
+define('SITE_URL','http://localhost/');
 //定义网站css文件路径
 define('CSS_URL',SITE_URL.'Public/public1/index/css');
 //定义网站js文件路径

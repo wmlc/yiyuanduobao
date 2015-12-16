@@ -8,8 +8,8 @@
 <meta name="keywords" content="1元夺宝">
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
 <meta content="telephone=no" name="format-detection">
-<link href="../../../../../public/public1/index/css/goods_details/common.css" rel="stylesheet">
-<link href="../../../../../public/public1/index/css/goods_details/detail.css" rel="stylesheet">
+<link href="../../../../../Public/public1/index/css/goods_details/common.css" rel="stylesheet">
+<link href="../../../../../Public/public1/index/css/goods_details/detail.css" rel="stylesheet">
 </head>
 <body>
 

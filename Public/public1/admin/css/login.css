@@ -5,7 +5,7 @@
 
 body{font-size:12px; font-family:"verdana,Arial"  margin:0px;color:#404040;  background:url(../img/login/bg.gif) #fff;padding:103px 0px 0px 0px;}
 div{margin:0 auto; padding:0;}
-input{ font-family:verdana,arial; font-weight:bold; background:url(../img/login/input.gif) no-repeat 0 0; border:none;width: 150px;height: 21px;padding: 5px;font-size: 12px; float:left;}
+input{ font-family:verdana,arial; font-weight:bold; background:url(../img/login/input.gif) no-repeat 0 0; border:none;width: 150px;height: 21px;padding: 2px;font-size: 12px; float:left;}
 .login_bar{ background:url(../img/login/login_bg.jpg) no-repeat 0 0; height:335px; width:695px;  margin:0 auto}
 .login_f td{ padding:3px 0}
 

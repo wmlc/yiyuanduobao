@@ -75,13 +75,13 @@ text-decoration:none;
 .dataTable{ width:100%; border-top:#ccc solid 1px; border-left:#ccc solid 1px; background:#fff;}
 .dataTable th{ height:25px; text-align:center; background:#edf3f7; line-height:25px;  border-right:#ccc solid 1px; border-bottom:#ccc solid 1px;}
 .dataTable td{ padding:5px; border-right:#ccc solid 1px; border-bottom:#ccc solid 1px;}
-.dataTable td.topTd, .dataTable td.bottomTd{background:url(../images/bgline.gif) repeat-x 0px 0px; padding:0px;  height:5px; font-size:0px; line-height:0px;}
+.dataTable td.topTd, .dataTable td.bottomTd{padding:0px;  height:5px; font-size:0px; line-height:0px;}
 
 
 table.form{ width:100%; border-top:#ccc solid 1px; font-size:14px; border-left:#ccc solid 1px; background:#fff;}
 table.form th{ height:25px; text-align:center; background:#edf3f7; line-height:25px;  border-right:#ccc solid 1px; border-bottom:#ccc solid 1px;}
 table.form td{ padding:5px; border-right:#ccc solid 1px; border-bottom:#ccc solid 1px;}
-table.form .topTd, table.form .bottomTd{ background:url(../images/bgline.gif) repeat-x; height:5px; font-size:0px; padding:0px;}
+table.form .topTd, table.form .bottomTd{height:5px; font-size:0px; padding:0px;}
 
 table.access_list td{ padding:8px; border:none; border-bottom:dotted 1px #ccc;}
 table.access_list td label{ display:inline-block; padding:0px 10px;}

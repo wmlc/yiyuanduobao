@@ -8,8 +8,8 @@
     <meta name="keywords" content="1元夺宝">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
 	<meta content="telephone=no" name="format-detection">
-	<link href="../../../../../public/public1/index/css/pay_join/common.css" rel="stylesheet">
-	<link href="../../../../../public/public1/index/css/pay_join/cart.css" rel="stylesheet">
+	<link href="../../../../../Public/public1/index/css/pay_join/common.css" rel="stylesheet">
+	<link href="../../../../../Public/public1/index/css/pay_join/cart.css" rel="stylesheet">
 	<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
 	<script>
 		$(function(){
